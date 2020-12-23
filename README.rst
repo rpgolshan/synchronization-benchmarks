@@ -2,7 +2,7 @@ Synchronization Benchmarks
 ==========================
 
 This is a micro-benchmarks suite targeting evaluation of synchronization primitives used primarily
-in data-center application and system software by evaluating their scalability and code overhead.  It contains synchronization 
+in data-center application and system software by evaluating their scalability and code overhead.  It contains synchronization
 primitives that are both independently developed and extracted from real software applications.
 
 License
@@ -35,8 +35,8 @@ The synchronization-benchmarks repository is divided up into multiple directorie
 
 - ext/ -- This is a directory for third party code taken from other projects if for instance your micro-benchmark is
   meant for testing example synchronization primitives for various sources.  For each third party source, a sub-directory
-  should be created that is descriptive of the origin of the imported code and the imported code placed in that sub-directory.  
-  All imported code needs to retain the original license and copyright information from the source location.  
+  should be created that is descriptive of the origin of the imported code and the imported code placed in that sub-directory.
+  All imported code needs to retain the original license and copyright information from the source location.
   For more detail on how to include third party code, please consult the `Contributing Guidelines`_.
 
 Getting Started

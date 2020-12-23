@@ -1,0 +1,17 @@
+name: C/C++ CI
+
+on: [push, pull_request]
+
+jobs:
+  Lockhammer:
+    runs-on: [ubuntu-latest]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install pip dependencies
+      run: pip3 install sh
+    - name: Install apt dependencies
+      run: sudo apt install hwloc
+    - name: Build Lockhammer
+      run: make -C benchmarks/lockhammer
+    - name: Test Lockhammer
+      run: python3 benchmarks/lockhammer/scripts/test_lockhammer.py
